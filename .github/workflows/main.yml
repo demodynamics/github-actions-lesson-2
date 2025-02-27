@@ -1,0 +1,14 @@
+name: CICD-pipeline-to-aws-eks
+on:
+ push:
+   branches: 
+     - main
+jobs:
+  ci-part:
+    runs-on: ubintu:latest
+
+    steps:
+    - name: Checkout the project
+      uses: actions/checkout@v4
+
+    
